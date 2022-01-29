@@ -1,0 +1,208 @@
+---
+# version: 0.5
+
+# general information section - can contain summary information like if the service offers a managed service or has an open source offer.
+# the details are then added with more extend in below blocks
+
+name: Snowplow Analytics
+overview:
+  website: https://snowplowanalytics.com
+  tagline: Deep customer understanding begins with high-quality behavioral data
+  has_managed_service: true
+  is_open_source: true
+  pricing: disclosed
+  company_entity: Snowplow Analytics Limited
+  company_based_in: UK
+
+offices:
+  - office: London
+    street: 17 Bevis Marks, Floor 6
+    zip: EC3A 7LN
+    city: London
+    country: UK
+
+funding:
+  - model: vc
+  - round:
+      stage: series A2
+      date: 2021-01-12
+      raised: 10000000
+      currency: USD
+      source: https://snowplowanalytics.com/blog/2021/01/12/snowplow-analytics-raises-10-million-in-series-a2-funding/
+      investors:
+        - name: Atlantic Bridge
+        - name: MMC Ventures
+
+
+product:
+  - type: event tracking, collection & loading
+  - frontend: yes
+  - server-side: yes
+  - layers:
+    - trackers: yes
+    - enrichment: yes
+    - storing: yes
+    - cleaning: no
+    - modeling: no
+    - reporting: no
+  - tracking_sdks:
+    - sdk: JavaScript
+    - sdk: Scala
+    - sdk: TypeScript
+    - sdk: Golang
+    - sdk: Python
+    - sdk: .NET
+    - sdk: iOS
+    - sdk: macOS
+    - sdk: tvOS
+    - sdk: watchOS
+    - sdk: Android
+    - sdk: React Native
+    - sdk: Roku
+    - sdk: Google AMP
+    - sdk: Java
+    - sdk: Pixel
+    - sdk: Ruby
+    - sdk: PHP
+    - sdk: C++
+    - sdk: Unity
+    - sdk: Ardunio
+    - sdk: Lua
+    - sdk: ActionScript3
+  - apis: no
+
+
+use_cases:
+  - name: server-side tracking
+    description: You can use the different Snowplow SDKs to send data from your backend systems directly into the event pipeline. Same for Webhook data where Snowplow offers some out of the box tracking.
+    links:
+      - url: https://docs.snowplowanalytics.com/docs/collecting-data/
+  - name: schema based events
+    description: you need to define schemas for each event and custom context you are tracking. Data that does not match the schema is still received but ends up on an intermediate pipeline where you can decide how to process it.
+    links:
+      - url: https://docs.snowplowanalytics.com/docs/understanding-tracking-design/understanding-schemas-and-validation/
+  - name: marketing attribution
+    description: Snowplow does not offer an out of box attribution solution. But with the extensive data you collect with Snowplow you can develop your own attribution models in your data warehouse.
+    links:
+      - url: https://snowplowanalytics.com/blog/2020/04/06/introduction-to-marketing-attribution-with-snowplow/
+  - name: product analytics
+    description: Snowplow does not offer any of the specific product analytics reports like Amplitude or Mixpanel does (funnels, cohorts,..). But the raw data allows you to create these yourself based on individual calculations.
+    links:
+      - url: https://snowplowanalytics.com/use-cases/product-analytics/
+
+content_about:
+  - name: Install Snowplow on the Google Cloud Platform
+    type: blog post
+    author: Simo Ahava
+    link: https://www.simoahava.com/analytics/install-snowplow-on-the-google-cloud-platform/
+  - name: dbt Office Hours - Snowplow special
+    type: video
+    author: dbtlabs
+    link: https://www.youtube.com/watch?v=M_GJlfF-i6s
+
+customer_cases:
+  - name: Software.com
+    case_study: https://snowplowanalytics.com/customers/software-com/
+  - name: Omio
+    case_study: https://snowplowanalytics.com/customers/omio/
+  - name: Strava
+    case_study: https://snowplowanalytics.com/customers/strava/  
+
+links:
+  - name: Docs
+    url: https://docs.snowplowanalytics.com
+   
+  - name: Release Notes
+    url: https://discourse.snowplowanalytics.com/c/announcements/new-releases
+
+  - name: Github
+    url: https://github.com/snowplow/snowplow
+  
+  - name: Discourse
+    url: https://discourse.snowplowanalytics.com
+  
+  - name: Meetup
+    url: https://www.meetup.com/topics/snowplow/
+
+  - name: Blog
+    url: https://snowplowanalytics.com/blog/
+  
+  - name: Events
+    url: https://snowplowanalytics.com/events/
+
+  - name: Partners
+    url: https://snowplowanalytics.com/partners/
+
+  - name: Jobs
+    url: https://snowplowanalytics.com/careers/
+  
+  - name: About us
+    url: https://snowplowanalytics.com/about-us/
+  
+  - name: Youtube
+    url: https://www.youtube.com/c/SnowplowAnalytics
+  
+  - name: Linkedin
+    url: https://www.linkedin.com/company/snowplow-analytics-ltd/
+  
+  - name: Twitter
+    url: https://twitter.com/snowplowdata
+  
+product_demos:
+  - demo: Try Snowplow - Get Started Today
+    type: high-level
+    url: https://www.youtube.com/watch?v=Aw5hdIjwVhY
+
+  
+managed_service:
+  - model: managed in private cloud
+    pricing_plans:
+      - plan: custom based on client requirements
+        
+open_source:
+  - repository: snowplow
+    url: https://github.com/snowplow/snowplow
+    license:  Apache-2.0 License
+    stars: 6000
+    latest_release: 21.08 North Cascades, 2021-08-31
+    contributor: 86
+    lanuages:
+      - language: Scala
+        share: 47%
+      - language: PLpgSQL
+        share: 24%
+      - language: Shell
+        share: 8.5%
+      - language: Python
+        share: 7.1%
+      - language: JavaScript
+        share: 6.7%
+      - language: Thrift
+        share: 3.3%
+    deployment:
+      - type: Amazon Web Services
+
+      - type: Google Cloud Platform
+
+
+
+privacy:
+  - cookieless_tracking: 
+    - cookieless_tracking: yes
+    - cookieless_implementation: multiple strategies
+    - doc_link: https://snowplowanalytics.com/blog/2021/01/05/how-to-leverage-cookieless-and-anonymous-tracking-with-snowplow/
+  - server_locations:
+    - location:
+      - countries: US,CA,BR,IE,UK,SE,ZA,DE,FR,BH,IT,IN,CN,SG,AU,JP,KR,CL,BE,CH,PL,FI,NL,TW,ID
+      - vendors: AWS, GCP
+  - script_loading:
+    - method: self hosted
+    
+destinations:
+  - name: BigQuery
+    type: Analytical Database
+    platform: Google Cloud
+
+integrations:
+  - name: Server-side GTM
+    type: Client & Tag Template
