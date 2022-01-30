@@ -6,7 +6,7 @@ from ruamel.yaml.comments import CommentedMap,CommentedSeq
 yaml = YAML()
 
 ALTERNATIVES_FOLDER = '../alternatives'
-DOCS_FOLDER = '../docs'
+DOCS_FOLDER = '../alternatives_docs'
 
 def get_alternatives_files(source_folder):
     alt_db = []
@@ -23,12 +23,15 @@ def get_alternatives_files(source_folder):
     return alt_db
 
 def add_headline(headline,level,md_data):
-    headline = f"{'#' * level} {headline.capitalize().replace('_',' ')} \n\n"
+    headline = f"{'#' * level} {headline.capitalize().replace('_',' ')}  \n\n"
     md_data += headline
     return md_data
 
 def add_label_text(item,md_data):
-    text = f"{item[0].capitalize().replace('_',' ')}:\n{item[1]} \n\n"
+    if item[0] in ['url','link']:
+        text = f"[{item[1]}]({item[1]})  \n\n" 
+    else:  
+        text = f"{item[0].capitalize().replace('_',' ')}:\n{item[1]}  \n\n"
     md_data += text
     return md_data
 
