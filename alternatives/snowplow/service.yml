@@ -89,6 +89,8 @@ product:
     - cleaning: no
     - modeling: no
     - reporting: no
+    - ab_testing: no
+    - recommendation: no
   - tracking_sdks:
     - sdk: JavaScript
     - sdk: Scala

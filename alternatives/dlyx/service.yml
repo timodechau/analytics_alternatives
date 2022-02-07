@@ -1,0 +1,117 @@
+---
+# version: 0.5
+
+
+name: DLYX The DataLayer Proxy
+overview:
+  website: https://dlyx.io
+  tagline: More Accurate Data and Much Better Compliance with True Server-side Tagging.
+  has_managed_service: true
+  is_open_source: false
+  pricing: not published
+  company_entity: HOKATA Online Marketing, Wolfram Bartke
+  company_based_in: DE
+
+offices:
+  - office: Stuttgart
+    street: Taubenheimstraße 24
+    zip: 70372
+    city: Stuttgart
+    country: DE
+
+links:
+  - name: Docs
+    url: https://www.tagmanagerserver.com/documentation/
+   
+  - name: Release Notes
+    url: https://www.tagmanagerserver.com/updates/
+    
+  - name: Linkedin
+    url: https://www.linkedin.com/company/dlyx
+
+
+product:
+  - type: event tracking
+  - frontend: yes
+  - server-side: yes
+  - layers:
+    - trackers: yes
+    - filtering: yes
+    - enrichment: yes
+    - storing: no
+    - cleaning: no
+    - modeling: no
+    - reporting: no
+    - ab_testing: no
+    - recommendation: no
+  - tracking_sdks:
+    - sdk: JavaScript
+    - sdk: CURL
+  - apis: no
+
+
+use_cases:
+  - name: server-side tagging
+    description: Build your Tags, Variables and Triggers in your standard clientside Google Tag Manager user interface and subequently imported to your DLYX environment. Supported Tags: Google Analytics (UA, GA4 planned for Q1 2022), Google Ads, Facebook Conversion API, individual http get-requests
+    links:
+      - url: https://dlyx.io/
+  - name: marketing analytics
+    description: Can be handled by final data destinations like Google Analytics
+  - name: server side tracking
+    description: Send your dataLayer event data server side with a http post request to the DLYX Proxy
+  - name: server side dataLayer event processing
+    description: Any dataLayer push events will automatically be sent to the DataLayer Proxy, processed and forwarded to Google Analytics via the Measurement Protocol.
+
+
+  
+product_demos:
+  - demo: DLYX Live Demo
+    type: Website example 
+    url: https://dlyx.io/en/demo/
+
+  
+managed_service:
+  - model: software rental with support
+    pricing_plans:
+      - plan: custom based on client requirements
+
+
+
+privacy:
+  - cookieless_tracking: 
+    - cookieless_tracking: yes
+    - cookieless_implementation: multiple strategies
+    - doc_link: coming soon
+
+  - frontend_script:
+    - method: self hosted
+    
+  - backend_script:
+    - method: self hosted
+    
+
+destinations:
+  - name: Google Analytics (UA)
+    type: web analytics
+    vendor: Google
+
+  - name: Google Analytics 4 (Q1 2022)
+    type: web analytics
+    vendor: Google
+
+  - name: Google Ads (server to server http protocol)
+    type: online advertising
+    vendor: Google
+
+  - name: Facebook Conversion API
+    type: online advertising
+    vendor: Facebook
+
+  - name: dynamic http get request
+    type: flexible
+    vendor: none
+
+
+integrations:
+  - name: WordPress (Q1 2022)
+    type: CMS Plugin
