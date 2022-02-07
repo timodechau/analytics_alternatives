@@ -82,9 +82,9 @@ def save_md_document(md_document,path):
     f.close()
 
 def main():
-    md_document = ""
     alt_db = get_alternatives_files(ALTERNATIVES_FOLDER)
     for alt_yaml in alt_db:
+        md_document = ""
         md_document = yaml_to_md(alt_yaml,md_document)
         save_md_document(md_document,alt_yaml['path'])
 
