@@ -52,7 +52,7 @@ product:
 
 use_cases:
   - name: server-side tagging
-    description: Build your Tags, Variables and Triggers in your standard clientside Google Tag Manager user interface and subequently imported to your DLYX environment. Supported Tags: Google Analytics (UA, GA4 planned for Q1 2022), Google Ads, Facebook Conversion API, individual http get-requests
+    description: Build your Tags, Variables and Triggers in your standard clientside Google Tag Manager user interface and subequently imported to your DLYX environment. Supported Tags - Google Analytics (UA, GA4 planned for Q1 2022), Google Ads, Facebook Conversion API, individual http get-requests
     links:
       - url: https://dlyx.io/
   - name: marketing analytics

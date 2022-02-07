@@ -139,7 +139,7 @@ Snowplow does not offer an out of box attribution solution. But with the extensi
 Description:
 Snowplow does not offer any of the specific product analytics reports like Amplitude or Mixpanel does (funnels, cohorts,..). But the raw data allows you to create these yourself based on individual calculations.  
 
-## Content about  
+## Content  
 
 #### Install snowplow on the google cloud platform  
 
