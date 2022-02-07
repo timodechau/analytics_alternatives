@@ -33,6 +33,50 @@ funding:
         - name: Atlantic Bridge
         - name: MMC Ventures
 
+links:
+  - name: Docs
+    url: https://docs.snowplowanalytics.com
+   
+  - name: Release Notes
+    url: https://discourse.snowplowanalytics.com/c/announcements/new-releases
+
+  - name: Github
+    url: https://github.com/snowplow/snowplow
+  
+  - name: Discourse
+    url: https://discourse.snowplowanalytics.com
+  
+  - name: Meetup
+    url: https://www.meetup.com/topics/snowplow/
+
+  - name: Blog
+    url: https://snowplowanalytics.com/blog/
+  
+  - name: Events
+    url: https://snowplowanalytics.com/events/
+
+  - name: Partners
+    url: https://snowplowanalytics.com/partners/
+
+  - name: Jobs
+    url: https://snowplowanalytics.com/careers/
+  
+  - name: About us
+    url: https://snowplowanalytics.com/about-us/
+  
+  - name: Youtube
+    url: https://www.youtube.com/c/SnowplowAnalytics
+  
+  - name: Linkedin
+    url: https://www.linkedin.com/company/snowplow-analytics-ltd/
+  
+  - name: Twitter
+    url: https://twitter.com/snowplowdata
+  
+product_demos:
+  - demo: Try Snowplow - Get Started Today
+    type: high-level
+    url: https://www.youtube.com/watch?v=Aw5hdIjwVhY
 
 product:
   - type: event tracking, collection & loading
@@ -90,7 +134,7 @@ use_cases:
     links:
       - url: https://snowplowanalytics.com/use-cases/product-analytics/
 
-content_about:
+content:
   - name: Install Snowplow on the Google Cloud Platform
     type: blog post
     author: Simo Ahava
@@ -107,51 +151,6 @@ customer_cases:
     case_study: https://snowplowanalytics.com/customers/omio/
   - name: Strava
     case_study: https://snowplowanalytics.com/customers/strava/  
-
-links:
-  - name: Docs
-    url: https://docs.snowplowanalytics.com
-   
-  - name: Release Notes
-    url: https://discourse.snowplowanalytics.com/c/announcements/new-releases
-
-  - name: Github
-    url: https://github.com/snowplow/snowplow
-  
-  - name: Discourse
-    url: https://discourse.snowplowanalytics.com
-  
-  - name: Meetup
-    url: https://www.meetup.com/topics/snowplow/
-
-  - name: Blog
-    url: https://snowplowanalytics.com/blog/
-  
-  - name: Events
-    url: https://snowplowanalytics.com/events/
-
-  - name: Partners
-    url: https://snowplowanalytics.com/partners/
-
-  - name: Jobs
-    url: https://snowplowanalytics.com/careers/
-  
-  - name: About us
-    url: https://snowplowanalytics.com/about-us/
-  
-  - name: Youtube
-    url: https://www.youtube.com/c/SnowplowAnalytics
-  
-  - name: Linkedin
-    url: https://www.linkedin.com/company/snowplow-analytics-ltd/
-  
-  - name: Twitter
-    url: https://twitter.com/snowplowdata
-  
-product_demos:
-  - demo: Try Snowplow - Get Started Today
-    type: high-level
-    url: https://www.youtube.com/watch?v=Aw5hdIjwVhY
 
   
 managed_service:

@@ -1,0 +1,317 @@
+---
+# version: 0.5
+
+
+name: Amplitude
+overview:
+  website: https://amplitude.com
+  tagline: The New Era of Digital Optimization - Harness the power of product data to maximize growth.
+  has_managed_service: true
+  is_open_source: false
+  pricing: free - disclosed
+  company_entity: Amplitude, Inc.
+  company_based_in: US
+
+offices:
+  - office: San Francisco
+    city: San Francisco
+    country: US
+  
+  - office: London
+    city: London
+    country: UK
+  
+  - office: Amsterdam
+    city: Amsterdam
+    country: NL
+  
+  - office: Paris
+    city: Paris
+    country: FR
+  
+  - office: Singapore
+    city: Singapore
+    country: SG
+
+funding:
+  - model: public traded
+  - stock:
+    exchange: NASDAQ
+    stock_symbol: AMPL
+
+links:
+  - name: Docs
+    url: https://help.amplitude.com/hc/en-us
+  
+  - name: Developer Docs
+    url: https://developers.amplitude.com/docs
+   
+  - name: Release Notes
+    url: https://community.amplitude.com/product-updates
+  
+  - name: Community
+    url: https://community.amplitude.com
+  
+  - name: Product Feedback
+    url: https://community.amplitude.com/ideas
+
+  - name: Meetup
+    url: https://www.meetup.com/topics/snowplow/
+
+  - name: Blog
+    url: https://amplitude.com/blog/
+  
+  - name: Events
+    url: https://amplitude.com/events
+
+  - name: Partners
+    url: https://partnerships.amplitude.com/English/directory/
+  
+  - name: Certification
+    url: https://amplitude.com/partner-training-signup
+
+  - name: Jobs
+    url: https://amplitude.com/careers
+  
+  - name: About us
+    url: https://amplitude.com/company
+  
+  - name: Youtube
+    url: https://www.youtube.com/channel/UCrUAUYgV0cPGnQnpPD0L2uQ
+  
+  - name: Linkedin
+    url: https://www.linkedin.com/company/amplitude-analytics/
+  
+  - name: Twitter
+    url: https://twitter.com/Amplitude_HQ
+
+product_demos:
+  - demo: Amplitude Product Demo
+    type: Introduction
+    url: https://www.youtube.com/watch?v=uh6laOWxR5A
+  
+  - demo: Product Playlist
+    type: Playlist
+    url: https://www.youtube.com/playlist?list=PLTuo2iFAKrD_h5WedeCyuAp3c2vLq0g_i
+
+product:
+  - type: event tracking, collection & loading, reporting, optimization
+  - frontend: yes
+  - server-side: yes
+  - layers:
+    - trackers: yes
+    - enrichment: yes
+    - storing: yes
+    - cleaning: add-on
+    - modeling: no
+    - reporting: yes
+    - ab_testing: yes
+    - recommendation: yes
+  - tracking_sdks:
+    - sdk: JavaScript
+    - sdk: iOS
+    - sdk: Android
+    - sdk: Unity
+    - sdk: Flutter
+    - sdk: React Native
+    - sdk: Node.js
+    - sdk: Java
+    - sdk: Unreal Engine
+
+  - apis:
+    - name: HTTP API V2
+      description: Use the HTTP API V2 to send data directly from your server to our endpoint
+      docs: https://developers.amplitude.com/docs/http-api-v2
+    
+    - name: Batch Event Upload API
+      description: The Batch Event Upload endpoint accepts JSON requests that contain an API key and a list of events.
+      docs: https://developers.amplitude.com/docs/batch-event-upload-api
+    
+    - name: Identify API
+      description: Use the Identify API to set the User ID for a particular Device ID or update user properties of a particular user without sending an event.
+      docs: https://developers.amplitude.com/docs/identify-api
+    
+    - name: Attribution API
+      description: The Attribution API is for sending attribution campaign events (identified by idfa/idfv/adid) that contain attribution information.
+      docs: https://developers.amplitude.com/docs/attribution-api
+    
+    - name: Behavioral Cohorts API
+      description: The Behavioral Cohorts API can be used to list all your cohorts in Amplitude, export a cohort in Amplitude, or upload a cohort.
+      docs: https://developers.amplitude.com/docs/behavioral-cohorts-api
+    
+    - name: Chart Annotations API
+      description: The Chart Annotations API allows you to programmatically annotate important dates
+      docs: https://developers.amplitude.com/docs/chart-annotations-api
+    
+    - name: Dashboard REST API
+      description: Any data that can be displayed on the dashboard graphs can also be obtained via the commands below. 
+      docs: https://developers.amplitude.com/docs/dashboard-rest-api
+    
+    - name: Export API
+      description: Export all event data for a given project that were uploaded within a specified range of dates.
+      docs: https://developers.amplitude.com/docs/export-api
+    
+    - name: Group Identify API
+      description: Use the Group Identify API to set or update properties of particular groups.
+      docs: https://developers.amplitude.com/docs/group-identify-api
+    
+    - name: Releases API
+      description: The Releases API allows you to programmatically create Releases. 
+      docs: https://developers.amplitude.com/docs/releases-api
+    
+    - name: SCIM API
+      description: The User Management API in Amplitude provides a programmatic solution to provisioning and group management through a public API
+      docs: https://developers.amplitude.com/docs/scim-api
+    
+    - name: Taxonomy API
+      description: The Taxonomy API grants Scholarship, Growth, and Enterprise clients the ability to programmatically maintain their event schema in the Taxonomy tab
+      docs: https://developers.amplitude.com/docs/taxonomy-api
+    
+    - name: User Privacy API
+      description: we have built a simple and easy-to-use API endpoint that allows you to programmatically submit requests to delete all data for a set of known Amplitude IDs and/or User IDs
+      docs: https://developers.amplitude.com/docs/user-deletion
+
+    - name: User Profile API
+      description: The User Profile API serves Amplitude User Profiles, which includes user properties, computed user properties, a list of cohort IDs of cohorts that the user is in, and recommendations.
+      docs: https://developers.amplitude.com/docs/user-profile-api
+    
+use_cases:
+  - name: server-side tracking
+    description: You can use the different Amplitude SDKs to send data from your backend systems directly into Amplitude.
+    links:
+      - url: https://help.amplitude.com/hc/en-us/articles/115000959052-For-developers-Getting-started
+  - name: schema based events
+    description: Amplitude does not enforce a schema. But it offers the Govern add-on that lets you create a tracking schema and test against it. It also enables you to edit & merge events (historically).
+    links:
+      - url: https://help.amplitude.com/hc/en-us/articles/115001477311-Govern-Add-On-Take-control-of-your-instrumentation
+  - name: marketing attribution
+    description: Amplitude provides a simple attribution out-of-the box by adding last touch marketing information (via utm and referrer) to the user properties. There are currently no multi-touch attribution models available.
+    links:
+      - url: https://developers.amplitude.com/docs/javascript#web-attribution
+  - name: product analytics
+    description: Amplitude is one of the leading product analytics services. It basically created this category. It comes with many specific product analytics reports like feature performance, release tracking, cohorts and funnels.
+    links:
+      - url: https://amplitude.com/product-analytics
+
+content:
+  - name: Amplitude Analytics - The Definitive Guide (2020 Update)
+    type: blog post
+    author: Ruben Ugarte
+    link: https://rubenugarte.com/definitive-guide-amplitude-analytics/
+  - name: How to build a user onboarding funnel with Amplitude
+    type: blog post
+    author: Appcues
+    link: https://www.appcues.com/blog/user-onboarding-funnel-amplitude
+
+customer_cases:
+  - name: BetterMe
+    case_study: https://amplitude.com/case-studies/better-me
+  - name: NBCUniversal
+    case_study: https://amplitude.com/case-studies/nbc
+  - name: Burger King
+    case_study: https://amplitude.com/case-studies/burger-king
+  - name: Postmates
+    case_study: https://amplitude.com/case-studies/postmates
+  - name: Under Armour
+    case_study: https://amplitude.com/case-studies/under-armour
+
+managed_service:
+  - model: full managed service on Amplitude's servers
+    pricing_plans:
+      - plan: Starter
+        price: free
+        features:
+          - name: Core analytics
+        volume: up to 10 million actions per month
+      - plan: Growth
+        price: individual - contact sales
+        features:
+          - name: Behavioral reports
+          - name: Predictive analytics
+        volume: custom
+      - plan: Enterprise
+        price: individual - contact sales
+        features:
+          - name: Monitoring and automated insights
+          - name: Advanced data governance
+          - name: Single sign-on and authentication
+        volume: custom
+    addons:
+      - addon: Govern
+        features:
+          - name: Expedite your QA and data validation process
+          - name: Define the rules for data collection
+          - name: Correct implementation errors without writing code
+      - addon: Insight
+        features:
+          - name: Get notified on changes in product performance
+          - name: Closely monitor KPI trends and anomalies
+          - name: Instantly surface patterns in your product data
+      - addon: Accounts
+        features:
+          - name: Identify features that drive account conversion
+          - name: Sync critical data from integrations like Salesforce and Zendesk
+          - name: Focus on the right accounts impacting ROI
+      - addon: Scale
+        features:
+          - name: Sample your high volume user base without sacrificing accuracy
+          - name: Get instant answers at any event volume
+          - name: Customize your sampling rate
+      - addon: Portfolio
+        features:
+          - name: Automatically merge user IDs across platforms and products
+          - name: Understand how users move between platforms and products
+          - name: Get a single click executive view of a company’s product health
+privacy:
+  - cookieless_tracking: 
+    - cookieless_tracking: yes
+    - cookieless_implementation: simple - just disable cookies - no stitching strategy
+    - doc_link: https://developers.amplitude.com/docs/advanced-settings#disabling-cookies
+  - server_locations:
+    - location:
+      - countries: US
+      - vendors: AWS
+    - link: https://amplitude.com/amplitude-security-and-privacy
+  - script_loading:
+    - method: Amplitude CDN
+
+destinations:
+  - name: AWS S3
+    type: File Storage
+    platform: AWS
+  - name: Snowflake
+    type: Cloud Analytical Database
+    platform: AWS, GCP, Azure
+
+integrations:
+  - name: Adobe Analytics
+    type: Data Sync
+    link: https://partnerships.amplitude.com/English/directory/partner/1364047/adobe-analytics
+  - name: Facebook Ads
+    type: Audience syncs
+    link: https://partnerships.amplitude.com/English/directory/partner/1364054/facebook-ads
+  - name: Google Ads
+    type: Audience syncs
+    link: https://partnerships.amplitude.com/English/directory/partner/1364057/google-ads
+  - name: Hightouch
+    type: user & event data syncs into Amplitude
+    link: https://partnerships.amplitude.com/English/directory/partner/1457683/hightouch
+  - name: Hubspot
+    type: Segment syncs
+    link: https://partnerships.amplitude.com/English/directory/partner/1449224/hubspot
+  - name: LaunchDarkly
+    type: Segment syncs
+    link: https://partnerships.amplitude.com/English/directory/partner/1369067/launchdarkly
+  - name: Marketo
+    type: Segment syncs
+    link: https://partnerships.amplitude.com/English/directory/partner/1364055/marketo
+  - name: Salesforce
+    type: Segment syncs
+    link: https://partnerships.amplitude.com/English/directory/partner/1364056/salesforce-marketing-cloud
+  - name: Slack
+    type: Slack app
+    link: https://partnerships.amplitude.com/English/directory/partner/1364046/slack
+  - name: Zendesk
+    type: User event data sync
+    link: https://partnerships.amplitude.com/English/directory/partner/1363219/zendesk
+  
