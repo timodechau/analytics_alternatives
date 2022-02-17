@@ -56,7 +56,7 @@ links:
     url: https://community.amplitude.com/ideas
 
   - name: Meetup
-    url: https://www.meetup.com/topics/snowplow/
+    url: 
 
   - name: Blog
     url: https://amplitude.com/blog/
@@ -107,6 +107,7 @@ product:
     - reporting: yes
     - ab_testing: yes
     - recommendation: yes
+    - destinations: yes
   - tracking_sdks:
     - sdk: JavaScript
     - sdk: iOS

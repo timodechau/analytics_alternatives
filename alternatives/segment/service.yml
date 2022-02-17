@@ -1,0 +1,261 @@
+---
+# version: 0.5
+
+
+name: Segment
+overview:
+  website: https://segment.com
+  tagline: The leading Customer Data Platform - Join 20,000+ businesses that use Segment's software and APIs to collect, clean, and activate their customer data.
+  has_managed_service: true
+  is_open_source: false
+  pricing: free - 120 - disclosed
+  company_entity: Segment.io Inc.
+  company_based_in: US
+  parent_company: Twilio Inc.
+
+offices:
+  - office: San Francisco
+    city: San Francisco
+    country: US
+  
+
+funding:
+  - model: Subsidiary
+  - parent_company: Twilio Inc.
+    
+
+links:
+  - name: Docs
+    url: https://segment.com/help/
+  
+  - name: Developer Docs
+    url: https://segment.com/docs/
+   
+  - name: Release Notes
+    url: 
+  
+  - name: Community
+    url: 
+  
+  - name: Product Feedback
+    url: 
+
+  - name: Meetup
+    url: 
+
+  - name: Blog
+    url: https://segment.com/blog/
+  
+  - name: Events
+    url: https://segment.com/events/
+
+  - name: Partners
+    url: https://segment.com/partners/
+  
+  - name: Certification
+    url: https://segment.com/academy/
+
+  - name: Jobs
+    url: https://www.twilio.com/company/jobs
+  
+  - name: About us
+    url: https://segment.com/newsroom/
+  
+  - name: Github
+    url: https://github.com/segmentio
+  
+  - name: Youtube
+    url: https://www.youtube.com/c/Segment
+  
+  - name: Linkedin
+    url: https://www.linkedin.com/company/segment-io/
+  
+  - name: Twitter
+    url: https://twitter.com/segment
+  
+  - name: Podcast
+    url: https://fixedthatforyou.com
+
+product_demos:
+  - demo: Product Demo for Marketeers
+    type: Demo
+    url: https://www.youtube.com/watch?v=VlEzF8eMXZQ
+  
+  - demo: Product Demo for Product Managers
+    type: Demo
+    url: https://www.youtube.com/watch?v=Hgz3Jp95JhQ
+  
+  
+product:
+  - type: event tracking, collection & loading, transformation, storage
+  - frontend: yes
+  - server-side: yes
+  - layers:
+    - trackers: yes
+    - enrichment: yes
+    - storing: yes
+    - cleaning: yes
+    - modeling: no
+    - reporting: no
+    - ab_testing: no
+    - recommendation: no
+    - destinations: yes
+  - tracking_sdks:
+    - sdk: JavaScript
+    - sdk: iOS
+    - sdk: Android
+    - sdk: React Native
+    - sdk: Xamarin
+    - sdk: .NET
+    - sdk: Clojure
+    - sdk: Golang
+    - sdk: HTTP API
+    - sdk: Java
+    - sdk: Kotlin
+    - sdk: Node.js
+    - sdk: PHP
+    - sdk: Pixel tracking API
+    - sdk: Python
+    - sdk: Ruby
+
+  - apis:
+    - name: HTTP Tracking API
+      description: The Segment HTTP Tracking API lets you record analytics data from any website or application.
+      docs: https://segment.com/docs/connections/sources/catalog/libraries/server/http-api/
+    
+    - name: Tracking pixel API
+      description: Tracking pixels (aka beacon, 1×1 gif, or clear gif) allow for tracking email opens, advertising impressions and checkout pages where JavaScript and POST requests are disallowed, but where you can embed an image.
+      docs: https://segment.com/docs/connections/sources/catalog/libraries/server/pixel-tracking-api/
+    
+    - name: Config API
+      description: The Config API enables you to programmatically manage Segment workspaces, sources, destinations and more
+      docs: https://segment.com/docs/config-api/
+    
+    
+    
+use_cases:
+  - name: server-side tracking
+    description: You can use the Segment server SDKs to send data from server applications.
+    links:
+      - url: https://segment.com/docs/connections/sources/catalog/#server
+  - name: schema based events
+    description: Segment does not enforce a schema. But it offers the Protocols add-on that lets you create a tracking schema and test against it.
+    links:
+      - url: https://segment.com/docs/protocols/
+  - name: marketing attribution
+    description: Segment does not provide any marketing attribution. It extends the data automatically with referrer and utm parameter information if present.
+    
+  - name: product analytics
+    description: Segment can collect product events and send them to product analytics services like Amplitude, Mixpanel or Heap.
+  
+  - name: raw data events in data warehouse
+    description: Segment offers several Data Storage Destinations to help you store your raw Segment data.
+    links:
+      - url: https://segment.com/docs/connections/storage/
+  
+  - name: ELT - load data into data warehouse
+    description: Cloud app sources empower you to pull together data from all of your different third-party tools into a Segment warehouse or to your other enabled integrated tools.
+    links:
+      - url: https://segment.com/docs/connections/sources/#cloud-apps
+  
+  - name: privacy
+    description: Segment includes a suite of Privacy tools to help your organization comply with regulations like the GDPR and the CCPA.
+    links:
+      - url: https://segment.com/docs/privacy/
+  
+  - name: audience segmentation
+    description: With Personas, you can build, enrich, and activate audiences across marketing tools.
+    links:
+      - url: https://segment.com/docs/personas/
+
+
+content:
+  - name: Segment io - The Definitive Guide (2020 Update)
+    type: blog post
+    author: Ruben Ugarte
+    link: https://rubenugarte.com/definitive-guide-to-segment-io/
+  
+
+customer_cases:
+  - name: Fox Sports 
+    case_study: https://segment.com/customers/fox/
+  - name: Domino's
+    case_study: https://segment.com/customers/dominos/
+  - name: IBM
+    case_study: https://segment.com/customers/ibm/
+  - name: ABInBev
+    case_study: https://segment.com/customers/ab-inbev/
+  - name: Vacasa
+    case_study: https://segment.com/customers/vacasa/
+
+managed_service:
+  - model: full managed service on Segment's servers
+    pricing_plans:
+      - plan: Starter
+        price: free
+        features:
+          - name: 2 sources
+        volume: up to 1000 visitors/mo
+      - plan: Team
+        price: from 120 USD/mo -> depends on visitors
+        features:
+          - name: 1 database destination
+          - name: unlimited sources
+        volume: 10000 visitors/mo
+      - plan: Enterprise
+        price: individual - contact sales
+        features:
+          - name: Single view of the customer
+          - name: Data governance
+          - name: Historical replay
+        volume: custom
+    addons:
+      - addon: Protocols
+        features:
+          - name: Create a shared data dictionary
+          - name: Give your analysts and marketers documentation
+          - name: Reduce implementation errors with Typewriter and an extensible API
+      - addon: Personas
+        features:
+          - name: Build audiences and create real‑time campaigns without relying on other teams.
+          - name: Query your user profile in real time to build personalized experiences.
+          - name: Understand which behavior led the user to be a part of the current audience.
+          - name: Understand the customer journey by determining traits like Emails Today or Last Product Bought in real-time.
+          - name: Stitch the customer journey between multiple user sessions and devices, while enabling centralized privacy and governance.
+      
+privacy:
+  - cookieless_tracking: 
+    - cookieless_tracking: no
+    - cookieless_implementation: currently not available
+    - doc_link: https://segment.com/docs/connections/sources/catalog/libraries/website/javascript/#local-storage-cookies-used-by-analyticsjs
+  - server_locations:
+    - location:
+      - countries: US,IE
+      - vendors: AWS
+    - link: https://segment.com/blog/regional-segment
+  - script_loading:
+    - method: Segment CDN
+
+destinations:
+  - name: Snowflake
+    type: Cloud Analytical Database
+    platform: AWS, Azure, GCP
+  - name: BigQuery
+    type: Cloud Analytical Database
+    platform: GCP
+  - name: Redshift
+    type: Cloud Analytical Database
+    platform: AWS
+  - name: Postgres
+    type: Database
+    platform: any
+  - name: Azure Synapse
+    type: Cloud Analytical Database
+    platform: Azure
+
+integrations:
+  - name: Apptimize
+    type: Destination
+    link: https://segment.com/docs/connections/destinations/catalog/apptimize/
+  
+  

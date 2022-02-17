@@ -81,6 +81,7 @@ product_demos:
 product:
   - type: event tracking, collection & loading
   - frontend: yes
+  - mobile: yes
   - server-side: yes
   - layers:
     - trackers: yes
@@ -91,6 +92,7 @@ product:
     - reporting: no
     - ab_testing: no
     - recommendation: no
+    - destinations: no
   - tracking_sdks:
     - sdk: JavaScript
     - sdk: Scala
