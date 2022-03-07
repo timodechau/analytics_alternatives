@@ -3,3 +3,266 @@
 
 
 name: Mixpanel
+overview:
+  website: https://mixpanel.com/
+  tagline: Build Better Products - Powerful, self-serve product analytics to help you convert, engage, and retain more users.
+  has_managed_service: true
+  is_open_source: false
+  pricing: free - 25 - disclosed
+  company_entity: Mixpanel Inc.
+  company_based_in: US
+
+offices:
+  - office: San Francisco
+    city: San Francisco, CA 94111
+    address: One Front Street, 28th floor
+    country: US
+  - office: Seattle
+    city: Seattle, WA 98104
+    address: 1008 Western Avenue, Suite 400
+    country: US
+  - office: New York
+    city: New York, NY 10016
+    address: 130 Madison Ave, 4th Floor
+    country: US
+  - office: Austin
+    city: Austin, TX 78701
+    address: 600 Congress Ave, 14th Floor
+    country: US
+  - office: Singapore
+    city: Singapore, 079914
+    address: 60 Anson Rd,Office 17-115 and 17-118
+    country: SG
+  - office: Barcelona
+    city: Barcelona, 08037
+    address: Avenida Diagonal 442, 3 1a
+    country: ES
+  - office: London
+    city: London, W1F 0DQ
+    address: 33 Broadwick St
+    country: UK
+  
+
+funding:
+  - model: vc
+  - round:
+    - stage: series c
+      date: 2021-11-15
+      raised: 200000000
+      currency: USD
+      source: https://techcrunch.com/2021/11/15/seven-years-after-last-venture-investment-mixpanel-scores-200m-series-c
+      investors:
+        - name: Bain Capital Tech Opportunities
+    
+
+links:
+  - name: Docs
+    url: https://help.mixpanel.com/hc/en-us
+  
+  - name: Developer Docs
+    url: https://developer.mixpanel.com/docs
+   
+  - name: Release Notes
+    url: https://community.mixpanel.com/product-updates
+  
+  - name: Community
+    url: https://community.mixpanel.com/
+  
+  - name: Testimonials
+    url: https://testimonial.to/mixpanel/all
+  
+  - name: Product Feedback
+    url: 
+
+  - name: Meetup
+    url: 
+
+  - name: Blog
+    url: https://mixpanel.com/blog/
+  
+  - name: Events
+    url: https://mixpanel.com/webinars/
+
+  - name: Partners
+    url: https://mixpanel.com/partners/experts
+  
+  - name: Certification
+    url: https://mixpanel.com/partners/becomeapartner-solution/
+
+  - name: Jobs
+    url: https://mixpanel.com/jobs/
+  
+  - name: About us
+    url: https://mixpanel.com/about/
+  
+  - name: Github
+    url: https://github.com/mixpanel/
+  
+  - name: Youtube
+    url: https://www.youtube.com/c/MixpanelAnalytics
+  
+  - name: Linkedin
+    url: https://www.linkedin.com/company/mixpanel-inc-/
+  
+  - name: Twitter
+    url: https://twitter.com/mixpanel
+  
+  - name: Podcast
+    url: 
+
+product_demos:
+  - demo: Product Demo
+    type: Demo
+    url: https://www.youtube.com/watch?v=XN1GXEkjxlI
+  
+  - demo: Mixpanel for all
+    type: Demo & Presentation
+    url: https://www.youtube.com/watch?v=N2xu_JlvxZg
+  
+  
+product:
+  - type: event tracking, collection & loading, reporting
+  - frontend: yes
+  - server-side: yes
+  - layers:
+    - trackers: yes
+    - enrichment: yes
+    - storing: yes
+    - cleaning: yes
+    - modeling: yes
+    - reporting: yes
+    - ab_testing: no
+    - recommendation: no
+    - destinations: yes
+  - tracking_sdks:
+    - sdk: JavaScript
+    - sdk: iOS Objective-C
+    - sdk: iOS Swift
+    - sdk: Android
+    - sdk: Python
+    - sdk: Java
+    - sdk: PHP
+    - sdk: Ruby
+    - sdk: Node.js
+    - sdk: React Native
+    - sdk: Flutter
+    - sdk: Unity
+    
+
+  - apis:
+    - name: Ingestion API
+      description: Mixpanel's Ingestion APIs allow you to send event or profile data to Mixpanel, which can be analyzed in our reporting interface.
+      docs: https://developer.mixpanel.com/reference/ingestion-api
+    
+    - name: Query API
+      description: Use the Query AP to get the same calculated data the powers Mixpanel's web application. This includes Insights, Funnels, Retention, and custom JQL Queries.
+      docs: https://developer.mixpanel.com/reference/query-api
+    
+    - name: Raw Data Export API
+      description: Use the Raw Data Export API endpoint to obtain your event data. This API supports direct download or uploading to a cloud bucket
+      docs: https://developer.mixpanel.com/reference/raw-data-export-api
+    
+    - name: Data Pipelines API
+      description: Use the Data Pipelines API to export Mixpanel data to your own Data Warehouse. Mixpanel’s Data Pipelines product removes the need to build complex connectors, maintain exporting code, and apply ad-hoc data transformations.
+      docs: https://developer.mixpanel.com/reference/data-warehouse-api
+    
+    - name: Lexicon Schemas API
+      description: Use the Schemas API to manage your data definitions in Lexicon and Data Audit
+      docs: https://developer.mixpanel.com/reference/lexicon-schemas-api
+    
+    - name: Service Accounts API
+      description: The Service Accounts API lets you manage your service accounts programmatically.
+      docs: https://developer.mixpanel.com/reference/service-accounts-api
+    
+    - name: Annotations API
+      description: The Annotations API lets you manage your annotations programmatically.
+      docs: https://developer.mixpanel.com/reference/overview-1
+    
+    
+    
+    
+    
+use_cases:
+  - name: server-side tracking
+    description: You can use the Mixpanel server SDKs to send data from server applications.
+    links:
+      - url: https://developer.mixpanel.com/docs/client-side-vs-server-side-tracking
+  - name: schema based events
+    description: Mixpanel does not enforce a schema. It uses a simple event name & properties besides user & group profiles.
+    links:
+      - url: https://developer.mixpanel.com/docs/data-structure-deep-dive
+  - name: marketing attribution
+    description: Mixpanel provides a simple marketing attribution covering last and first touch marketing information.
+    links:
+      - url: https://help.mixpanel.com/hc/en-us/articles/115004561766-Track-Sources-Of-Web-Traffic
+    
+  - name: product analytics
+    description: Mixpanel is one of the leading product analytics services. It comes with many specific product analytics reports like feature performance, release tracking, cohorts and funnels.
+  
+  - name: raw data events in data warehouse
+    description: Mixpanel offers a raw data export and DWH pipeline
+    links:
+      - url: https://developer.mixpanel.com/docs/raw-export-pipeline
+  
+  
+  
+
+customer_cases:
+  - name: Lemonade
+    case_study: https://mixpanel.com/customers/lemonade-drives-growth-mixpanels-user-insights/
+  - name: DocuSign
+    case_study: https://mixpanel.com/customers/docusign-accelerates-growth/
+  - name: ZipRecruiter
+    case_study: https://mixpanel.com/customers/ziprecruiter/
+  - name: GoDaddy
+    case_study: https://mixpanel.com/customers/godaddy-increases-feature-adoption-customer-success-story/
+  - name: ticketmaster
+    case_study: https://mixpanel.com/customers/ticketmaster-one-user-analytics/
+
+managed_service:
+  - model: full managed service on Mixpanel's servers
+    pricing_plans:
+      - plan: Free
+        price: free
+        features:
+          - name: core reports
+        volume: up to 100000 users/mo
+      - plan: Growth
+        price: from 25 USD/mo -> depends on visitors
+        features:
+          - name: Unlimited saved reports & cohorts
+          - name: Group Analytics & Data Pipelines add-ons
+        volume: 100000 visitors/mo
+      - plan: Enterprise
+        price: individual - contact sales
+        features:
+          - name: Experiments & Signal reports
+          - name: SSO & automated provisioning
+          - name: Seasonal & events-based pricing
+        volume: custom
+    addons:
+      - addon: Data Pipelines
+        features:
+          - name: Perform custom analysis with easy access to all raw Mixpanel data
+          - name: Sync to your destination of choice via either JSON or Parquet formats
+          
+      - addon: Group Analytics
+        features:
+          - name: Group Analytics lets you calculate metrics at the account or company level
+          - name: Monitor account activation rates
+          - name: Track the customer journey for key accounts
+          
+      
+privacy:
+  - cookieless_tracking: 
+    - cookieless_tracking: no
+    - cookieless_implementation: custom on your end
+    - doc_link: https://community.mixpanel.com/pulling-data-out-of-mixpanel-12/mixpanel-cookie-4929
+  - server_locations:
+    - location:
+      - countries: US,EU
+      - vendors: 
+    - link: https://mixpanel.com/legal/eu-data-residency/
+  - script_loading:
+    - method: Mixpanel CDN
+
